@@ -10,5 +10,8 @@ var coinCombination = function(cents) {
   dimes_count = Math.floor(cents / 10);
   cents %= 10;
 
+  nickels_count = Math.floor(cents / 5);
+  cents %= 5;
+
   return [pennies_count, nickels_count, dimes_count, quarters_count];
 };
