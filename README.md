@@ -2,7 +2,7 @@ Coin Combination Calculator
 ======================
 
 Takes in an amount of cents and calculates the minimum number of coins
-needs to make change for that amount.
+needed to make change for that amount.
 
 Installation
 ------------
