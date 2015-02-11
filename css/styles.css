@@ -1,0 +1,8 @@
+#result {
+  display: none;
+}
+
+.quarters-count, .dimes-count, .nickels-count, .pennies-count {
+  font-style: italic;
+  font-weight: bold;
+}
