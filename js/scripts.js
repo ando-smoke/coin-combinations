@@ -17,3 +17,18 @@ var coinCombination = function(cents) {
 
   return [pennies_count, nickels_count, dimes_count, quarters_count];
 };
+
+$(document).ready(function() {
+  $("form#coin_combo").submit(function(event) {
+    var cents = parseInt($("input#cents").val());
+    var coinCombo = coinCombination(cents)
+
+    $(".quarters-count").text(coinCombo[3]);
+    $(".dimes-count").text(coinCombo[2]);
+    $(".nickels-count").text(coinCombo[1]);
+    $(".pennies-count").text(coinCombo[0]);
+
+    $("#result").show();
+    event.preventDefault();
+  });
+});
